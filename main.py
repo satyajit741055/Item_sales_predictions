@@ -4,7 +4,7 @@ from sales.config.configuration import Configuration
 from sales.constant import CONFIG_DIR, get_current_time_stamp
 from sales.pipeline.pipeline import Pipeline
 from sales.entity.sales_predictor import salesPredictor, SalesData
-from flask import send_file, abort, render_template
+from flask import send_file, abort, render_template,send_from_directory
 import os
 
 
@@ -34,13 +34,13 @@ def index():
     except Exception as e:
         return str(e)
 
-@app.route('/artifact', defaults={'req_path': 'sales'})
+@app.route('/artifact', defaults={'req_path':'sales'})
 @app.route('/artifact/<path:req_path>')
 def render_artifact_dir(req_path):
     os.makedirs("sales", exist_ok=True)
-    # Joining the base and the requested path
+    # Joining the base and the requested path 
     print(f"req_path: {req_path}")
-    abs_path = os.path.join(req_path)
+    abs_path = os.path.join(req_path) 
     print(abs_path)
     # Return 404 if path doesn't exist
     if not os.path.exists(abs_path):
@@ -133,7 +133,7 @@ def predict():
         return render_template('predict.html', context=context)
     return render_template("predict.html", context=context)
 
-@app.route('/saved_models', defaults={'req_path': 'saved_models'})
+@app.route('/saved_models', defaults={'req_path':'saved_models'})
 @app.route('/saved_models/<path:req_path>')
 def saved_models_dir(req_path):
     os.makedirs("saved_models", exist_ok=True)
