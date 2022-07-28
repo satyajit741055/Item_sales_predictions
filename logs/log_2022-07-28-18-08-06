@@ -1,0 +1,11 @@
+[2022-07-28 18:08:07,931]^;WARNING^;122^;_internal.py^;_log()^; * Debugger is active!
+[2022-07-28 18:08:07,940]^;INFO^;122^;_internal.py^;_log()^; * Debugger PIN: 926-016-958
+[2022-07-28 18:08:07,948]^;INFO^;122^;_internal.py^;_log()^; * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2022-07-28 18:08:11,323]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:08:11] "POST /predict HTTP/1.1" 500 -
+[2022-07-28 18:08:11,349]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:08:11] "GET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2022-07-28 18:08:11,546]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:08:11] "GET /predict?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2022-07-28 18:08:11,652]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:08:11] "GET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2022-07-28 18:08:11,999]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:08:11] "GET /predict?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2022-07-28 18:08:12,016]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:08:12] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2022-07-28 18:08:12,255]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:08:12] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2022-07-28 18:09:31,826]^;INFO^;122^;_internal.py^;_log()^; * Detected change in 'd:\\Projects_new\\Stores_Sales_Prediction\\sales\\entity\\sales_predictor.py', reloading

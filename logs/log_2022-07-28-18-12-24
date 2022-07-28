@@ -1,0 +1,185 @@
+[2022-07-28 18:12:26,174]^;WARNING^;122^;_internal.py^;_log()^; * Debugger is active!
+[2022-07-28 18:12:26,174]^;INFO^;122^;_internal.py^;_log()^; * Debugger PIN: 926-016-958
+[2022-07-28 18:12:26,189]^;INFO^;122^;_internal.py^;_log()^; * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2022-07-28 18:12:28,644]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:12:28] "POST /predict HTTP/1.1" 200 -
+[2022-07-28 18:12:41,788]^;INFO^;166^;main.py^;render_log_dir()^;req_path: logs
+[2022-07-28 18:12:41,795]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:12:41] "GET /logs HTTP/1.1" 200 -
+[2022-07-28 18:12:42,888]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:12:42] "GET /artifact HTTP/1.1" 200 -
+[2022-07-28 18:12:43,626]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:12:43] "GET /saved_models HTTP/1.1" 200 -
+[2022-07-28 18:12:44,132]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:12:44] "GET /predict HTTP/1.1" 200 -
+[2022-07-28 18:12:44,681]^;INFO^;217^;configuration.py^;get_training_pipeline_config()^;Training pipleine config: TrainingPipelineConfig(artifact_dir='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact')
+[2022-07-28 18:12:44,681]^;INFO^;135^;pipeline.py^;run_pipeline()^;Pipeline starting.
+[2022-07-28 18:12:44,681]^;INFO^;151^;pipeline.py^;run_pipeline()^;Pipeline experiment: Experiment(experiment_id='d4d74c99-4915-42f6-a56f-587f58a0fe6d', initialization_timestamp='2022-07-28-18-12-44', artifact_time_stamp='2022-07-28-18-12-44', running_status=True, start_time=datetime.datetime(2022, 7, 28, 18, 12, 44, 681542), stop_time=None, execution_time=None, message='Pipeline has been started.', experiment_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\experiment\\experiment.csv', accuracy=None, is_model_accepted=None)
+[2022-07-28 18:12:44,695]^;INFO^;65^;configuration.py^;get_data_ingestion_config()^;DataIngestionConfig: DataIngestionConfig(dataset_download_url='https://github.com/satyajit741055/Kaggle_datasets/raw/main/archive%20(1).zip', zip_download_dir='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_ingestion\\2022-07-28-18-12-44\\zip_data', raw_data_dir='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_ingestion\\2022-07-28-18-12-44\\raw_data', ingested_train_dir='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_ingestion\\2022-07-28-18-12-44\\ingested_data\\train', ingested_test_dir='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_ingestion\\2022-07-28-18-12-44\\ingested_data\\test', ingested_dir='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_ingestion\\2022-07-28-18-12-44\\ingested_data')
+[2022-07-28 18:12:44,696]^;INFO^;20^;data_ingestion.py^;__init__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion Started <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-07-28 18:12:44,696]^;INFO^;34^;data_ingestion.py^;download_data()^;Downloading file from : https://github.com/satyajit741055/Kaggle_datasets/raw/main/archive%20(1).zip into : D:\Projects_new\Stores_Sales_Prediction\sales\artifact\data_ingestion\2022-07-28-18-12-44\zip_data 
+[2022-07-28 18:12:45,946]^;INFO^;217^;configuration.py^;get_training_pipeline_config()^;Training pipleine config: TrainingPipelineConfig(artifact_dir='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact')
+[2022-07-28 18:12:45,971]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:12:45] "GET /train HTTP/1.1" 200 -
+[2022-07-28 18:12:46,317]^;INFO^;44^;data_ingestion.py^;download_data()^;File downloaded successfully  D:\Projects_new\Stores_Sales_Prediction\sales\artifact\data_ingestion\2022-07-28-18-12-44\zip_data 
+[2022-07-28 18:12:46,317]^;INFO^;60^;data_ingestion.py^;extract_data()^;Extracting zip file D:\Projects_new\Stores_Sales_Prediction\sales\artifact\data_ingestion\2022-07-28-18-12-44\zip_data into dir D:\Projects_new\Stores_Sales_Prediction\sales\artifact\data_ingestion\2022-07-28-18-12-44\raw_data 
+[2022-07-28 18:12:46,334]^;INFO^;70^;data_ingestion.py^;extract_data()^;>>>>>>>>>>>>>>>>>>>> Extraction completed <<<<<<<<<<<<<<<<<<<<
+[2022-07-28 18:12:46,349]^;INFO^;87^;data_ingestion.py^;split_data_as_train_test()^;Reading csv file: [D:\Projects_new\Stores_Sales_Prediction\sales\artifact\data_ingestion\2022-07-28-18-12-44\raw_data\data.csv]
+[2022-07-28 18:12:46,371]^;INFO^;90^;data_ingestion.py^;split_data_as_train_test()^;Splitting data into train and test with test data ration = 0.2
+[2022-07-28 18:12:46,377]^;INFO^;101^;data_ingestion.py^;split_data_as_train_test()^;Exporting training datset to file: [D:\Projects_new\Stores_Sales_Prediction\sales\artifact\data_ingestion\2022-07-28-18-12-44\ingested_data\train\data.csv]
+[2022-07-28 18:12:46,422]^;INFO^;105^;data_ingestion.py^;split_data_as_train_test()^;Exporting test dataset to file: [D:\Projects_new\Stores_Sales_Prediction\sales\artifact\data_ingestion\2022-07-28-18-12-44\ingested_data\test\data.csv]
+[2022-07-28 18:12:46,438]^;INFO^;119^;data_ingestion.py^;split_data_as_train_test()^;data_ingestion_artifact : [DataIngestionArtifact(train_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_ingestion\\2022-07-28-18-12-44\\ingested_data\\train\\data.csv', test_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_ingestion\\2022-07-28-18-12-44\\ingested_data\\test\\data.csv', is_ingested=True, message='Data ingestion completed successfully.')]
+[2022-07-28 18:12:46,438]^;INFO^;140^;data_ingestion.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion completed <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+
+
+[2022-07-28 18:12:46,438]^;INFO^;99^;configuration.py^;get_data_validation_config()^;DataValidationConfig: [DataValidationConfig(schema_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\config\\schema.yaml', report_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_validation\\2022-07-28-18-12-44\\report.json', report_page_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_validation\\2022-07-28-18-12-44\\report.html')]
+[2022-07-28 18:12:46,438]^;INFO^;23^;data_validation.py^;__init__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> DataValidation started <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+
+
+[2022-07-28 18:12:46,438]^;INFO^;53^;data_validation.py^;is_train_test_exist()^;IS train and test File Exists? -> True
+[2022-07-28 18:12:46,519]^;INFO^;76^;data_validation.py^;validation_dataset_schema()^;Data Validation done and statys : {Validations_status}
+[2022-07-28 18:12:47,954]^;INFO^;147^;data_validation.py^;initiate_data_validation()^;Data validation artifact : DataIngestionArtifac(schema_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\config\\schema.yaml', report_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_validation\\2022-07-28-18-12-44\\report.json', report_page_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_validation\\2022-07-28-18-12-44\\report.html', is_validated=True, message=' data Validation Performed Successfully')
+[2022-07-28 18:12:47,954]^;INFO^;154^;data_validation.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation completed <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+
+
+[2022-07-28 18:12:47,955]^;INFO^;142^;configuration.py^;get_data_transformation_config()^;DataTransformationConfig: DataTransformationConfig(transformed_train_dir='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_transformation\\2022-07-28-18-12-44\\transformed_data\\train', transformed_test_dir='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_transformation\\2022-07-28-18-12-44\\transformed_data\\test', preprocessed_object_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_transformation\\2022-07-28-18-12-44\\preprocessed\\preprocessed.pkl', transformed_train_file='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_transformation\\2022-07-28-18-12-44\\preprocessed_files\\train_transformed', transformed_test_file='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_transformation\\2022-07-28-18-12-44\\preprocessed_files\\test_transformed')
+[2022-07-28 18:12:47,955]^;INFO^;25^;data_transformation.py^;__init__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation Started <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-07-28 18:12:47,969]^;INFO^;62^;data_transformation.py^;get_dats_transformer_object()^;Categorical columns : ['Item_Identifier', 'Item_Fat_Content', 'Outlet_Size', 'Outlet_Location_Type', 'Outlet_Type']
+[2022-07-28 18:12:47,969]^;INFO^;63^;data_transformation.py^;get_dats_transformer_object()^;Numerical columns : ['Item_Weight', 'Item_Visibility', 'Item_MRP', 'Outlet_age']
+[2022-07-28 18:12:47,969]^;INFO^;112^;data_transformation.py^;initiate_data_transformation()^;Preprocessing object received
+[2022-07-28 18:12:47,969]^;INFO^;114^;data_transformation.py^;initiate_data_transformation()^;obtaining Test and Train files and loading as pandas dataframe
+[2022-07-28 18:12:48,020]^;INFO^;128^;data_transformation.py^;initiate_data_transformation()^;Seperating input features and target feature from test and train
+[2022-07-28 18:12:48,050]^;INFO^;177^;data_transformation.py^;initiate_data_transformation()^;Starting applying preprocessing object on both files 
+[2022-07-28 18:12:49,896]^;INFO^;185^;data_transformation.py^;initiate_data_transformation()^;To check operations performed correctly or not will save this dataframe
+[2022-07-28 18:12:50,135]^;INFO^;234^;data_transformation.py^;initiate_data_transformation()^;Saving transformed training and testing array.
+[2022-07-28 18:12:50,151]^;INFO^;241^;data_transformation.py^;initiate_data_transformation()^;Saving preprocessing object.
+[2022-07-28 18:12:50,151]^;INFO^;257^;data_transformation.py^;initiate_data_transformation()^;Data Transformation artifact : DataTransformationArtifact(is_transformed=True, message='Data Transformation Successful', transformed_train_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_transformation\\2022-07-28-18-12-44\\transformed_data\\train\\data.npz', transformed_test_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_transformation\\2022-07-28-18-12-44\\transformed_data\\test\\data.npz', preprocessed_object_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_transformation\\2022-07-28-18-12-44\\preprocessed\\preprocessed.pkl', transformed_train_arr_df_sorce='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_transformation\\2022-07-28-18-12-44\\preprocessed_files\\train_transformed\\train_array_df.csv', transformed_test_arr_df_source='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_transformation\\2022-07-28-18-12-44\\preprocessed_files\\test_transformed\\test_arry_df.csv')
+[2022-07-28 18:12:50,151]^;INFO^;265^;data_transformation.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation completed <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-07-28 18:12:50,151]^;INFO^;171^;configuration.py^;get_model_trainer_config()^;Model trainer config: ModelTrainerConfig(trained_model_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\model_trainer\\2022-07-28-18-12-44\\trained_model\\model.pkl', base_accuracy=0.5)
+[2022-07-28 18:12:50,151]^;INFO^;47^;model_trainer.py^;__init__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Model trainer log started.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+[2022-07-28 18:12:50,151]^;INFO^;93^;model_trainer.py^;initiate_model_trainer()^;Loading transformed training dataset
+[2022-07-28 18:12:50,166]^;INFO^;97^;model_trainer.py^;initiate_model_trainer()^;Loading transformed testing dataset
+[2022-07-28 18:12:50,166]^;INFO^;101^;model_trainer.py^;initiate_model_trainer()^;Splitting training and testing input and target feature
+[2022-07-28 18:12:50,166]^;INFO^;105^;model_trainer.py^;initiate_model_trainer()^;Expected accuracy: 0.5
+[2022-07-28 18:14:25,406]^;INFO^;217^;configuration.py^;get_training_pipeline_config()^;Training pipleine config: TrainingPipelineConfig(artifact_dir='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact')
+[2022-07-28 18:14:25,422]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:14:25] "GET /train HTTP/1.1" 200 -
+[2022-07-28 18:14:28,745]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:14:28] "GET /view_experiment_hist HTTP/1.1" 200 -
+[2022-07-28 18:14:46,972]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:14:46] "GET /view_experiment_hist HTTP/1.1" 200 -
+[2022-07-28 18:14:48,770]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:14:48] "GET /view_experiment_hist HTTP/1.1" 200 -
+[2022-07-28 18:14:53,126]^;INFO^;217^;configuration.py^;get_training_pipeline_config()^;Training pipleine config: TrainingPipelineConfig(artifact_dir='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact')
+[2022-07-28 18:14:53,135]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:14:53] "GET /train HTTP/1.1" 200 -
+[2022-07-28 18:15:22,863]^;INFO^;166^;main.py^;render_log_dir()^;req_path: logs
+[2022-07-28 18:15:22,896]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:15:22] "GET /logs HTTP/1.1" 200 -
+[2022-07-28 18:15:24,787]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:15:24] "GET /artifact HTTP/1.1" 200 -
+[2022-07-28 18:15:25,900]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:15:25] "GET /saved_models HTTP/1.1" 200 -
+[2022-07-28 18:15:26,990]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:15:26] "GET /predict HTTP/1.1" 200 -
+[2022-07-28 18:15:29,227]^;INFO^;166^;main.py^;render_log_dir()^;req_path: logs
+[2022-07-28 18:15:29,269]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:15:29] "GET /logs HTTP/1.1" 200 -
+[2022-07-28 18:16:13,446]^;ERROR^;627^;_base.py^;_invoke_callbacks()^;exception calling callback for <Future at 0x211dd746748 state=finished raised WorkerInterrupt>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 178, in submit
+    fn, *args, **kwargs)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\process_executor.py", line 1118, in submit
+    'cannot schedule new futures after shutdown')
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[2022-07-28 18:16:13,462]^;ERROR^;627^;_base.py^;_invoke_callbacks()^;exception calling callback for <Future at 0x211dd727048 state=finished raised WorkerInterrupt>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 178, in submit
+    fn, *args, **kwargs)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\process_executor.py", line 1118, in submit
+    'cannot schedule new futures after shutdown')
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[2022-07-28 18:16:13,462]^;ERROR^;627^;_base.py^;_invoke_callbacks()^;exception calling callback for <Future at 0x211dd7333c8 state=finished raised WorkerInterrupt>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 178, in submit
+    fn, *args, **kwargs)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\process_executor.py", line 1118, in submit
+    'cannot schedule new futures after shutdown')
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[2022-07-28 18:16:13,462]^;ERROR^;627^;_base.py^;_invoke_callbacks()^;exception calling callback for <Future at 0x211dd746e08 state=finished raised WorkerInterrupt>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 178, in submit
+    fn, *args, **kwargs)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\process_executor.py", line 1118, in submit
+    'cannot schedule new futures after shutdown')
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[2022-07-28 18:16:13,462]^;ERROR^;627^;_base.py^;_invoke_callbacks()^;exception calling callback for <Future at 0x211dd7273c8 state=finished raised WorkerInterrupt>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 178, in submit
+    fn, *args, **kwargs)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\process_executor.py", line 1118, in submit
+    'cannot schedule new futures after shutdown')
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[2022-07-28 18:16:13,462]^;ERROR^;627^;_base.py^;_invoke_callbacks()^;exception calling callback for <Future at 0x211dd6cae08 state=finished raised WorkerInterrupt>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 178, in submit
+    fn, *args, **kwargs)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\process_executor.py", line 1118, in submit
+    'cannot schedule new futures after shutdown')
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown

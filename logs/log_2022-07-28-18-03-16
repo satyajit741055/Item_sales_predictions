@@ -1,0 +1,375 @@
+[2022-07-28 18:03:17,512]^;WARNING^;122^;_internal.py^;_log()^; * Debugger is active!
+[2022-07-28 18:03:17,522]^;INFO^;122^;_internal.py^;_log()^; * Debugger PIN: 926-016-958
+[2022-07-28 18:03:17,531]^;INFO^;122^;_internal.py^;_log()^; * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2022-07-28 18:03:20,231]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:03:20] "GET / HTTP/1.1" 200 -
+[2022-07-28 18:03:20,751]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:03:20] "GET /favicon.ico HTTP/1.1" 404 -
+[2022-07-28 18:03:22,457]^;INFO^;217^;configuration.py^;get_training_pipeline_config()^;Training pipleine config: TrainingPipelineConfig(artifact_dir='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact')
+[2022-07-28 18:03:22,458]^;INFO^;135^;pipeline.py^;run_pipeline()^;Pipeline starting.
+[2022-07-28 18:03:22,458]^;INFO^;151^;pipeline.py^;run_pipeline()^;Pipeline experiment: Experiment(experiment_id='56ad6ba1-f569-4b3d-97e7-47c0f438a7f0', initialization_timestamp='2022-07-28-18-03-22', artifact_time_stamp='2022-07-28-18-03-22', running_status=True, start_time=datetime.datetime(2022, 7, 28, 18, 3, 22, 458933), stop_time=None, execution_time=None, message='Pipeline has been started.', experiment_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\experiment\\experiment.csv', accuracy=None, is_model_accepted=None)
+[2022-07-28 18:03:22,477]^;INFO^;65^;configuration.py^;get_data_ingestion_config()^;DataIngestionConfig: DataIngestionConfig(dataset_download_url='https://github.com/satyajit741055/Kaggle_datasets/raw/main/archive%20(1).zip', zip_download_dir='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_ingestion\\2022-07-28-18-03-22\\zip_data', raw_data_dir='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_ingestion\\2022-07-28-18-03-22\\raw_data', ingested_train_dir='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_ingestion\\2022-07-28-18-03-22\\ingested_data\\train', ingested_test_dir='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_ingestion\\2022-07-28-18-03-22\\ingested_data\\test', ingested_dir='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_ingestion\\2022-07-28-18-03-22\\ingested_data')
+[2022-07-28 18:03:22,477]^;INFO^;20^;data_ingestion.py^;__init__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion Started <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-07-28 18:03:22,477]^;INFO^;34^;data_ingestion.py^;download_data()^;Downloading file from : https://github.com/satyajit741055/Kaggle_datasets/raw/main/archive%20(1).zip into : D:\Projects_new\Stores_Sales_Prediction\sales\artifact\data_ingestion\2022-07-28-18-03-22\zip_data 
+[2022-07-28 18:03:24,587]^;INFO^;44^;data_ingestion.py^;download_data()^;File downloaded successfully  D:\Projects_new\Stores_Sales_Prediction\sales\artifact\data_ingestion\2022-07-28-18-03-22\zip_data 
+[2022-07-28 18:03:24,587]^;INFO^;60^;data_ingestion.py^;extract_data()^;Extracting zip file D:\Projects_new\Stores_Sales_Prediction\sales\artifact\data_ingestion\2022-07-28-18-03-22\zip_data into dir D:\Projects_new\Stores_Sales_Prediction\sales\artifact\data_ingestion\2022-07-28-18-03-22\raw_data 
+[2022-07-28 18:03:24,620]^;INFO^;70^;data_ingestion.py^;extract_data()^;>>>>>>>>>>>>>>>>>>>> Extraction completed <<<<<<<<<<<<<<<<<<<<
+[2022-07-28 18:03:24,621]^;INFO^;87^;data_ingestion.py^;split_data_as_train_test()^;Reading csv file: [D:\Projects_new\Stores_Sales_Prediction\sales\artifact\data_ingestion\2022-07-28-18-03-22\raw_data\data.csv]
+[2022-07-28 18:03:24,650]^;INFO^;90^;data_ingestion.py^;split_data_as_train_test()^;Splitting data into train and test with test data ration = 0.2
+[2022-07-28 18:03:24,658]^;INFO^;101^;data_ingestion.py^;split_data_as_train_test()^;Exporting training datset to file: [D:\Projects_new\Stores_Sales_Prediction\sales\artifact\data_ingestion\2022-07-28-18-03-22\ingested_data\train\data.csv]
+[2022-07-28 18:03:24,707]^;INFO^;105^;data_ingestion.py^;split_data_as_train_test()^;Exporting test dataset to file: [D:\Projects_new\Stores_Sales_Prediction\sales\artifact\data_ingestion\2022-07-28-18-03-22\ingested_data\test\data.csv]
+[2022-07-28 18:03:24,722]^;INFO^;119^;data_ingestion.py^;split_data_as_train_test()^;data_ingestion_artifact : [DataIngestionArtifact(train_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_ingestion\\2022-07-28-18-03-22\\ingested_data\\train\\data.csv', test_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_ingestion\\2022-07-28-18-03-22\\ingested_data\\test\\data.csv', is_ingested=True, message='Data ingestion completed successfully.')]
+[2022-07-28 18:03:24,723]^;INFO^;140^;data_ingestion.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion completed <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+
+
+[2022-07-28 18:03:24,723]^;INFO^;99^;configuration.py^;get_data_validation_config()^;DataValidationConfig: [DataValidationConfig(schema_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\config\\schema.yaml', report_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_validation\\2022-07-28-18-03-22\\report.json', report_page_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_validation\\2022-07-28-18-03-22\\report.html')]
+[2022-07-28 18:03:24,723]^;INFO^;23^;data_validation.py^;__init__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> DataValidation started <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+
+
+[2022-07-28 18:03:24,724]^;INFO^;53^;data_validation.py^;is_train_test_exist()^;IS train and test File Exists? -> True
+[2022-07-28 18:03:24,792]^;INFO^;76^;data_validation.py^;validation_dataset_schema()^;Data Validation done and statys : {Validations_status}
+[2022-07-28 18:03:26,080]^;INFO^;147^;data_validation.py^;initiate_data_validation()^;Data validation artifact : DataIngestionArtifac(schema_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\config\\schema.yaml', report_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_validation\\2022-07-28-18-03-22\\report.json', report_page_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_validation\\2022-07-28-18-03-22\\report.html', is_validated=True, message=' data Validation Performed Successfully')
+[2022-07-28 18:03:26,080]^;INFO^;154^;data_validation.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation completed <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+
+
+[2022-07-28 18:03:26,081]^;INFO^;142^;configuration.py^;get_data_transformation_config()^;DataTransformationConfig: DataTransformationConfig(transformed_train_dir='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_transformation\\2022-07-28-18-03-22\\transformed_data\\train', transformed_test_dir='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_transformation\\2022-07-28-18-03-22\\transformed_data\\test', preprocessed_object_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_transformation\\2022-07-28-18-03-22\\preprocessed\\preprocessed.pkl', transformed_train_file='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_transformation\\2022-07-28-18-03-22\\preprocessed_files\\train_transformed', transformed_test_file='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_transformation\\2022-07-28-18-03-22\\preprocessed_files\\test_transformed')
+[2022-07-28 18:03:26,081]^;INFO^;25^;data_transformation.py^;__init__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation Started <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-07-28 18:03:26,090]^;INFO^;62^;data_transformation.py^;get_dats_transformer_object()^;Categorical columns : ['Item_Identifier', 'Item_Fat_Content', 'Outlet_Size', 'Outlet_Location_Type', 'Outlet_Type']
+[2022-07-28 18:03:26,090]^;INFO^;63^;data_transformation.py^;get_dats_transformer_object()^;Numerical columns : ['Item_Weight', 'Item_Visibility', 'Item_MRP', 'Outlet_age']
+[2022-07-28 18:03:26,090]^;INFO^;112^;data_transformation.py^;initiate_data_transformation()^;Preprocessing object received
+[2022-07-28 18:03:26,090]^;INFO^;114^;data_transformation.py^;initiate_data_transformation()^;obtaining Test and Train files and loading as pandas dataframe
+[2022-07-28 18:03:26,121]^;INFO^;128^;data_transformation.py^;initiate_data_transformation()^;Seperating input features and target feature from test and train
+[2022-07-28 18:03:26,156]^;INFO^;177^;data_transformation.py^;initiate_data_transformation()^;Starting applying preprocessing object on both files 
+[2022-07-28 18:03:28,113]^;INFO^;185^;data_transformation.py^;initiate_data_transformation()^;To check operations performed correctly or not will save this dataframe
+[2022-07-28 18:03:28,487]^;INFO^;234^;data_transformation.py^;initiate_data_transformation()^;Saving transformed training and testing array.
+[2022-07-28 18:03:28,493]^;INFO^;241^;data_transformation.py^;initiate_data_transformation()^;Saving preprocessing object.
+[2022-07-28 18:03:28,499]^;INFO^;257^;data_transformation.py^;initiate_data_transformation()^;Data Transformation artifact : DataTransformationArtifact(is_transformed=True, message='Data Transformation Successful', transformed_train_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_transformation\\2022-07-28-18-03-22\\transformed_data\\train\\data.npz', transformed_test_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_transformation\\2022-07-28-18-03-22\\transformed_data\\test\\data.npz', preprocessed_object_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_transformation\\2022-07-28-18-03-22\\preprocessed\\preprocessed.pkl', transformed_train_arr_df_sorce='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_transformation\\2022-07-28-18-03-22\\preprocessed_files\\train_transformed\\train_array_df.csv', transformed_test_arr_df_source='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\data_transformation\\2022-07-28-18-03-22\\preprocessed_files\\test_transformed\\test_arry_df.csv')
+[2022-07-28 18:03:28,501]^;INFO^;265^;data_transformation.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation completed <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-07-28 18:03:28,501]^;INFO^;171^;configuration.py^;get_model_trainer_config()^;Model trainer config: ModelTrainerConfig(trained_model_file_path='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact\\model_trainer\\2022-07-28-18-03-22\\trained_model\\model.pkl', base_accuracy=0.5)
+[2022-07-28 18:03:28,501]^;INFO^;47^;model_trainer.py^;__init__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Model trainer log started.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+[2022-07-28 18:03:28,501]^;INFO^;93^;model_trainer.py^;initiate_model_trainer()^;Loading transformed training dataset
+[2022-07-28 18:03:28,517]^;INFO^;97^;model_trainer.py^;initiate_model_trainer()^;Loading transformed testing dataset
+[2022-07-28 18:03:28,523]^;INFO^;101^;model_trainer.py^;initiate_model_trainer()^;Splitting training and testing input and target feature
+[2022-07-28 18:03:28,524]^;INFO^;105^;model_trainer.py^;initiate_model_trainer()^;Expected accuracy: 0.5
+[2022-07-28 18:04:05,921]^;INFO^;166^;main.py^;render_log_dir()^;req_path: logs
+[2022-07-28 18:04:06,035]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:04:06] "GET /logs HTTP/1.1" 200 -
+[2022-07-28 18:04:09,988]^;INFO^;166^;main.py^;render_log_dir()^;req_path: logs
+[2022-07-28 18:04:09,990]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:04:09] "GET /logs HTTP/1.1" 200 -
+[2022-07-28 18:04:10,800]^;INFO^;166^;main.py^;render_log_dir()^;req_path: logs
+[2022-07-28 18:04:10,801]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:04:10] "GET /logs HTTP/1.1" 200 -
+[2022-07-28 18:05:01,760]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:05:01] "GET / HTTP/1.1" 200 -
+[2022-07-28 18:05:05,160]^;INFO^;166^;main.py^;render_log_dir()^;req_path: logs
+[2022-07-28 18:05:05,162]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:05:05] "GET /logs HTTP/1.1" 200 -
+[2022-07-28 18:05:15,455]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:05:15] "GET /artifact HTTP/1.1" 200 -
+[2022-07-28 18:05:16,453]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:05:16] "GET /saved_models HTTP/1.1" 200 -
+[2022-07-28 18:05:17,524]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:05:17] "GET /predict HTTP/1.1" 200 -
+[2022-07-28 18:05:29,593]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:05:29] "POST /predict HTTP/1.1" 500 -
+[2022-07-28 18:05:29,896]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:05:29] "GET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2022-07-28 18:05:29,927]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:05:29] "GET /predict?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2022-07-28 18:05:29,928]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:05:29] "GET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2022-07-28 18:05:30,295]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:05:30] "GET /predict?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2022-07-28 18:05:30,334]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:05:30] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2022-07-28 18:05:30,552]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [28/Jul/2022 18:05:30] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2022-07-28 18:06:13,927]^;INFO^;122^;_internal.py^;_log()^; * Detected change in 'd:\\Projects_new\\Stores_Sales_Prediction\\main.py', reloading
+[2022-07-28 18:06:14,948]^;ERROR^;627^;_base.py^;_invoke_callbacks()^;exception calling callback for <Future at 0x27e14b78f88 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 178, in submit
+    fn, *args, **kwargs)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\process_executor.py", line 1118, in submit
+    'cannot schedule new futures after shutdown')
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[2022-07-28 18:06:15,101]^;ERROR^;627^;_base.py^;_invoke_callbacks()^;exception calling callback for <Future at 0x27e14989d08 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 178, in submit
+    fn, *args, **kwargs)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\process_executor.py", line 1118, in submit
+    'cannot schedule new futures after shutdown')
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[2022-07-28 18:06:15,522]^;ERROR^;627^;_base.py^;_invoke_callbacks()^;exception calling callback for <Future at 0x27e14a30ac8 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 178, in submit
+    fn, *args, **kwargs)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\process_executor.py", line 1118, in submit
+    'cannot schedule new futures after shutdown')
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[2022-07-28 18:06:15,763]^;ERROR^;627^;_base.py^;_invoke_callbacks()^;exception calling callback for <Future at 0x27e148f8488 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 178, in submit
+    fn, *args, **kwargs)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\process_executor.py", line 1118, in submit
+    'cannot schedule new futures after shutdown')
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[2022-07-28 18:06:16,310]^;ERROR^;627^;_base.py^;_invoke_callbacks()^;exception calling callback for <Future at 0x27e14b94248 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 178, in submit
+    fn, *args, **kwargs)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\process_executor.py", line 1118, in submit
+    'cannot schedule new futures after shutdown')
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[2022-07-28 18:06:16,559]^;ERROR^;627^;_base.py^;_invoke_callbacks()^;exception calling callback for <Future at 0x27e148dcb08 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 178, in submit
+    fn, *args, **kwargs)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\process_executor.py", line 1118, in submit
+    'cannot schedule new futures after shutdown')
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[2022-07-28 18:06:16,574]^;ERROR^;627^;_base.py^;_invoke_callbacks()^;exception calling callback for <Future at 0x27e14b43f48 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 178, in submit
+    fn, *args, **kwargs)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\process_executor.py", line 1118, in submit
+    'cannot schedule new futures after shutdown')
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[2022-07-28 18:06:17,537]^;ERROR^;627^;_base.py^;_invoke_callbacks()^;exception calling callback for <Future at 0x27e14b1c688 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 178, in submit
+    fn, *args, **kwargs)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\process_executor.py", line 1118, in submit
+    'cannot schedule new futures after shutdown')
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[2022-07-28 18:06:18,662]^;ERROR^;627^;_base.py^;_invoke_callbacks()^;exception calling callback for <Future at 0x27e148fea48 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 178, in submit
+    fn, *args, **kwargs)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\process_executor.py", line 1118, in submit
+    'cannot schedule new futures after shutdown')
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[2022-07-28 18:06:18,804]^;ERROR^;627^;_base.py^;_invoke_callbacks()^;exception calling callback for <Future at 0x27e148fe848 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 178, in submit
+    fn, *args, **kwargs)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\process_executor.py", line 1118, in submit
+    'cannot schedule new futures after shutdown')
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[2022-07-28 18:06:19,178]^;ERROR^;627^;_base.py^;_invoke_callbacks()^;exception calling callback for <Future at 0x27e14b48c08 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 178, in submit
+    fn, *args, **kwargs)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\process_executor.py", line 1118, in submit
+    'cannot schedule new futures after shutdown')
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[2022-07-28 18:06:19,440]^;ERROR^;627^;_base.py^;_invoke_callbacks()^;exception calling callback for <Future at 0x27e149b1108 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 178, in submit
+    fn, *args, **kwargs)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\process_executor.py", line 1118, in submit
+    'cannot schedule new futures after shutdown')
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[2022-07-28 18:06:19,769]^;ERROR^;627^;_base.py^;_invoke_callbacks()^;exception calling callback for <Future at 0x27e14b52808 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 178, in submit
+    fn, *args, **kwargs)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\process_executor.py", line 1118, in submit
+    'cannot schedule new futures after shutdown')
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[2022-07-28 18:06:19,802]^;ERROR^;627^;_base.py^;_invoke_callbacks()^;exception calling callback for <Future at 0x27e149b1508 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 178, in submit
+    fn, *args, **kwargs)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\process_executor.py", line 1118, in submit
+    'cannot schedule new futures after shutdown')
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[2022-07-28 18:06:19,802]^;ERROR^;627^;_base.py^;_invoke_callbacks()^;exception calling callback for <Future at 0x27e14aebc88 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 178, in submit
+    fn, *args, **kwargs)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\process_executor.py", line 1118, in submit
+    'cannot schedule new futures after shutdown')
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[2022-07-28 18:06:20,269]^;ERROR^;627^;_base.py^;_invoke_callbacks()^;exception calling callback for <Future at 0x27e14b52608 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\_base.py", line 625, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 359, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 794, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\_parallel_backends.py", line 531, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\reusable_executor.py", line 178, in submit
+    fn, *args, **kwargs)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python37\lib\site-packages\joblib\externals\loky\process_executor.py", line 1118, in submit
+    'cannot schedule new futures after shutdown')
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown

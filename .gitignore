@@ -85,7 +85,6 @@ ipython_config.py
 # pyenv
 .python-version
 
-/housing/artifact/
 
 # pipenv
 #   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
@@ -138,4 +137,6 @@ dmypy.json
 /roguhexperiments
 /sales_prize
 .ipynb_checkpoints
-
+/sales/artifact
+/saved_models
+/logs

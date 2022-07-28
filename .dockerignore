@@ -1,8 +1,14 @@
 .git
 .gitignore
+
+/logs
+/Jupyter Notebook
+
+
+/sales/artifact/
 /Documents
 /roguhexperiments
 /sales_prize
-/logs
-/Jupyter Notebook
 .ipynb_checkpoints
+/sales/artifact
+/saved_models
