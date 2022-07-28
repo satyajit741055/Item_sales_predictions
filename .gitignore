@@ -133,10 +133,10 @@ dmypy.json
 
 
 # Not uploaded 
-/Documents
-/roguhexperiments
-/sales_prize
+Documents/
+roguhexperiments/
+sales_prize
 .ipynb_checkpoints
-/sales/artifact
-/saved_models
-/logs
+sales/artifact
+saved_models/*
+logs

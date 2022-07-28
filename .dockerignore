@@ -1,9 +1,9 @@
 .git
 .gitignore
+sales_prize/
 
-/Jupyter Notebook
-/Documents
-/roguhexperiments
-/sales_prize
+Jupyter Notebook/
+Documents/
+roguhexperiments/
+
 .ipynb_checkpoints
-/saved_models
