@@ -1,0 +1,2 @@
+[2022-07-28 17:41:13,064]^;INFO^;217^;configuration.py^;get_training_pipeline_config()^;Training pipleine config: TrainingPipelineConfig(artifact_dir='D:\\Projects_new\\Stores_Sales_Prediction\\sales\\artifact')
+[2022-07-28 17:41:13,065]^;INFO^;111^;pipeline.py^;run_pipeline()^;Pipeline starting.

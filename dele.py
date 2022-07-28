@@ -70,7 +70,7 @@ LOG_DIR = os.path.join(ROOT_DIR, LOG_FOLDER_NAME)
 PIPELINE_DIR = os.path.join(ROOT_DIR, PIPELINE_FOLDER_NAME)
 MODEL_DIR = os.path.join(ROOT_DIR, SAVED_MODELS_DIR_NAME)
 
-
+'''
 sales_data = SalesData(Item_Identifier="FDI28",
                                    Item_Weight=14.3,
                                    Item_Fat_Content="Low Fat",
@@ -88,4 +88,20 @@ sales_data = SalesData(Item_Identifier="FDI28",
 sales_predictor = salesPredictor(model_dir=MODEL_DIR)
 sales_df = sales_data.get_sales_input_data_frame()
 Item_Outlet_Sales = sales_predictor.predict(X=sales_df)
-print(Item_Outlet_Sales)
+print(Item_Outlet_Sales)'''
+
+
+def train():
+    message = ""
+    pipeline = Pipeline(config=Configuration(current_time_stamp=get_current_time_stamp()))
+    if not Pipeline.experiment.running_status:
+        message = "Training started."
+        print(message)
+        pipeline.run_pipeline()
+    else:
+        message = "Training is already in progress."
+        print(message)
+    
+
+
+train()
