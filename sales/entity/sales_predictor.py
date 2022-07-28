@@ -22,7 +22,6 @@ class SalesData:
                     Outlet_Size: str,
                     Outlet_Location_Type: str,
                     Outlet_Type: str,
-                    Item_Outlet_Sales: None,
                     Outlet_Identifier: str,
                  ):
         try:
@@ -37,7 +36,7 @@ class SalesData:
             self.Outlet_Location_Type = Outlet_Location_Type
             self.Outlet_Type = Outlet_Type
             self.Outlet_Identifier = Outlet_Identifier
-            self.Item_Outlet_Sales = Item_Outlet_Sales
+            
         except Exception as e:
             raise SalesException(e, sys) from e
 
@@ -130,7 +129,7 @@ class SalesData:
                 "Outlet_Location_Type": [self.Outlet_Location_Type],
                 "Outlet_Type" : [self.Outlet_Type],
                 "Outlet_Identifier" : [self.Outlet_Identifier],
-                "Item_Outlet_Sales" : [self.Item_Outlet_Sales]
+                
                 }
             return input_data
         except Exception as e:
