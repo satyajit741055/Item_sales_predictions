@@ -1,0 +1,8 @@
+.git
+.gitignore
+/Documents
+/roguhexperiments
+/sales_prize
+/logs
+/Jupyter Notebook
+.ipynb_checkpoints
