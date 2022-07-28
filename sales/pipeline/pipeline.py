@@ -1,6 +1,7 @@
-from sales.logger import logging
+from sales.logger import logging ,get_log_dataframe
 from sales.exceptions import SalesException
 import os,sys
+from datetime import datetime
 import uuid
 from sales.constant import *
 from sales.component.data_ingestion import DataIngestion
@@ -195,12 +196,12 @@ class Pipeline(Thread):
         except Exception as e:
             raise SalesException(e,sys) from e   
 
-        def run(self):
-            try:
-                self.run_pipeline()
-            except Exception as e:
-                raise e
-
+    def run(self):
+        try:
+            self.run_pipeline()
+        except Exception as e:
+            raise e
+     
 
 
     @classmethod

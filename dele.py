@@ -91,17 +91,49 @@ Item_Outlet_Sales = sales_predictor.predict(X=sales_df)
 print(Item_Outlet_Sales)'''
 
 
+from flask import Flask, request
+from sales.logger import logging,get_log_dataframe
+from sales.config.configuration import Configuration
+from sales.constant import CONFIG_DIR, get_current_time_stamp
+from sales.pipeline.pipeline import Pipeline
+from sales.entity.sales_predictor import salesPredictor, SalesData
+from flask import send_file, abort, render_template
+import os
+
+
+
+
+
+ROOT_DIR = os.getcwd()
+LOG_FOLDER_NAME = "logs"
+PIPELINE_FOLDER_NAME = "sales"
+SAVED_MODELS_DIR_NAME = "saved_models"
+LOG_DIR = os.path.join(ROOT_DIR, LOG_FOLDER_NAME)
+PIPELINE_DIR = os.path.join(ROOT_DIR, PIPELINE_FOLDER_NAME)
+MODEL_DIR = os.path.join(ROOT_DIR, SAVED_MODELS_DIR_NAME)
+
+
+
+
+SALES_DATA_KEY = "Sales_data"
+ITEM_OUTLET_SALES_KEY = "Item_Outlet_Sales"
+
+
+
+
 def train():
     message = ""
     pipeline = Pipeline(config=Configuration(current_time_stamp=get_current_time_stamp()))
     if not Pipeline.experiment.running_status:
         message = "Training started."
-        print(message)
         pipeline.run_pipeline()
     else:
         message = "Training is already in progress."
-        print(message)
-    
+    context = {
+        "experiment": pipeline.get_experiments_status().to_html(classes='table table-striped col-12'),
+        "message": message
+    }
+    return render_template('train.html', context=context)
 
 
 train()

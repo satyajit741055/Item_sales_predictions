@@ -65,6 +65,7 @@ def render_artifact_dir(req_path):
         "parent_folder": os.path.dirname(abs_path),
         "parent_label": abs_path
     }
+    logging.info(f"artifact results : {result}")
     return render_template('files.html', result=result)
 
 
@@ -75,7 +76,7 @@ def train():
     pipeline = Pipeline(config=Configuration(current_time_stamp=get_current_time_stamp()))
     if not Pipeline.experiment.running_status:
         message = "Training started."
-        pipeline.run_pipeline()
+        pipeline.start()
     else:
         message = "Training is already in progress."
     context = {
@@ -156,6 +157,7 @@ def saved_models_dir(req_path):
         "parent_folder": os.path.dirname(abs_path),
         "parent_label": abs_path
     }
+    logging.info(f"saved templets results : {result}")
     return render_template('saved_model_files.html', result=result)
 
 @app.route(f'/logs', defaults={'req_path': f'{LOG_FOLDER_NAME}'})
@@ -184,6 +186,7 @@ def render_log_dir(req_path):
         "parent_folder": os.path.dirname(abs_path),
         "parent_label": abs_path
     }
+    logging.info(f"logs results : {result}")
     return render_template('log_files.html', result=result)
 
 
