@@ -54,7 +54,7 @@ def render_artifact_dir(req_path):
                 for line in file.readlines():
                     content = f"{content}{line}"
                 return content
-        return send_file(abs_path)
+        return send_from_directory(abs_path)
 
     # Show directory contents
     files = {os.path.join(abs_path, file_name): file_name for file_name in os.listdir(abs_path) if
