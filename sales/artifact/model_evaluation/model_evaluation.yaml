@@ -1,0 +1,5 @@
+best_model:
+  model_path: D:\Projects_new\Stores_Sales_Prediction\sales\artifact\model_trainer\2022-07-29-10-48-08\trained_model\model.pkl
+history:
+  2022-07-29-10-48-08:
+    model_path: D:\Projects_new\Stores_Sales_Prediction\sales\artifact\model_trainer\2022-07-29-10-36-54\trained_model\model.pkl
