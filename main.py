@@ -144,7 +144,7 @@ def saved_models_dir(req_path):
     print(abs_path)
     # Return 404 if path doesn't exist
     if not os.path.exists(abs_path):
-        return render_template('error.html')
+        return render_template('error.html') 
 
     # Check if path is a file and serve
     if os.path.isfile(abs_path):
