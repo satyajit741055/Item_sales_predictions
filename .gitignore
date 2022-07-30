@@ -137,3 +137,5 @@ Documents/
 roguhexperiments/
 sales_prize
 .ipynb_checkpoints
+sales/artifact/
+logs
