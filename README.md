@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Stores Sales Prediction | iNeuron Internship
 
 ## Table of Content
@@ -97,3 +98,8 @@ Every End - End Project has life cycle to get desired output.
 - The data set is created by Brij Bhushan Anand.
 - iNeuron Team who resolved my queries during the project.
 - Krish Naik , Sudhanshu sir and Sunny sir for guiding and mentoring.
+=======
+# Item_sales_predictions
+Full Stack End - End Machine Learning Project with CI/CD Piepline
+Working Link : https://item-sales-predictions.herokuapp.com/ 
+>>>>>>> 76aa8b4d6df68a58a2f1a44a7b5c45677c2cbec7

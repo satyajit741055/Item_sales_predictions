@@ -51,7 +51,6 @@ class DataIngestion:
     def extract_data(self,zip_file_path:str):
         try:
             raw_data_dir = self.data_ingestion_config.raw_data_dir
-
             if os.path.exists(raw_data_dir):
                 os.remove(raw_data_dir)
 
