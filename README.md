@@ -103,4 +103,3 @@ Every End - End Project has life cycle to get desired output.
 # Item_sales_predictions
 Full Stack End - End Machine Learning Project with CI/CD Piepline
 Working Link : https://item-sales-predictions.herokuapp.com/ 
->>>>>>> 76aa8b4d6df68a58a2f1a44a7b5c45677c2cbec7
