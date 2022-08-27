@@ -117,3 +117,17 @@
 [2022-08-27 16:29:38,863]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [27/Aug/2022 16:29:38] "GET /logs HTTP/1.1" 200 -
 [2022-08-27 16:29:39,813]^;INFO^;69^;main.py^;render_artifact_dir()^;artifact results : {'files': {}, 'parent_folder': '', 'parent_label': 'sales'}
 [2022-08-27 16:29:39,814]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [27/Aug/2022 16:29:39] "GET /artifact HTTP/1.1" 200 -
+[2022-08-27 16:41:28,181]^;INFO^;69^;main.py^;render_artifact_dir()^;artifact results : {'files': {}, 'parent_folder': '', 'parent_label': 'sales'}
+[2022-08-27 16:41:28,182]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [27/Aug/2022 16:41:28] "GET /artifact HTTP/1.1" 200 -
+[2022-08-27 16:41:33,194]^;INFO^;169^;main.py^;render_log_dir()^;req_path: logs
+[2022-08-27 16:41:33,195]^;INFO^;191^;main.py^;render_log_dir()^;logs results : {'files': {}, 'parent_folder': '', 'parent_label': 'logs'}
+[2022-08-27 16:41:33,197]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [27/Aug/2022 16:41:33] "GET /logs HTTP/1.1" 200 -
+[2022-08-27 16:41:34,827]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [27/Aug/2022 16:41:34] "GET / HTTP/1.1" 200 -
+[2022-08-27 16:41:36,386]^;INFO^;169^;main.py^;render_log_dir()^;req_path: logs
+[2022-08-27 16:41:36,387]^;INFO^;191^;main.py^;render_log_dir()^;logs results : {'files': {}, 'parent_folder': '', 'parent_label': 'logs'}
+[2022-08-27 16:41:36,389]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [27/Aug/2022 16:41:36] "GET /logs HTTP/1.1" 200 -
+[2022-08-27 16:41:37,249]^;INFO^;69^;main.py^;render_artifact_dir()^;artifact results : {'files': {}, 'parent_folder': '', 'parent_label': 'sales'}
+[2022-08-27 16:41:37,249]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [27/Aug/2022 16:41:37] "GET /artifact HTTP/1.1" 200 -
+[2022-08-27 16:41:37,769]^;INFO^;161^;main.py^;saved_models_dir()^;saved templets results : {'files': {}, 'parent_folder': '', 'parent_label': 'saved_models'}
+[2022-08-27 16:41:37,770]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [27/Aug/2022 16:41:37] "GET /saved_models HTTP/1.1" 200 -
+[2022-08-27 16:41:38,609]^;INFO^;122^;_internal.py^;_log()^;127.0.0.1 - - [27/Aug/2022 16:41:38] "GET /predict HTTP/1.1" 200 -
