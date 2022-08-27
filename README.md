@@ -13,7 +13,7 @@
 ## Demo
 Link: [https://item-sales-predictions.herokuapp.com/](https://item-sales-predictions.herokuapp.com/)
 
-Adding Image 
+![Screenshot](images\Project1.png)
 
 ## Overview
 This is End to End machine learning Regression project which takes information related to product in the store as input and predict the sales of that product.
