@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Stores Sales Prediction | iNeuron Internship
 
 ## Table of Content
