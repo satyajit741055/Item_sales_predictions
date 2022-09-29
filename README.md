@@ -32,33 +32,47 @@ Every End - End Project has life cycle to get desired output.
     - Analyzed data using visual & Statistical techniques 
     - Univarient Analysis observations 
         - Items with low fat are bought more 
+        <img src="images\FAT_content.png" alt="FAT_CONTENT" />
         - Fruits and vegetables largely sold and also snacks also have good sales 
+        <img src="images\fruits.png" alt="fruits" />
         - Medium size stores/malls have more sales.
+        <img src="images\outlet_sizw.png" alt="outlet_sizw" />
         - more number of stores/malls located in tier 3 cities 
+        <img src="images\tier3.png" alt="tier3" />
         - stores/malls are more of Supermarket type 1
+        <img src="images\supermarket.png" alt="supermarket" />
     - Bivarient Analysis obseravations 
-        - sales are high for both low and regular fat items 
+        - sales are high for both low and regular fat items
+        <img src="images\fat_sales.png" alt="fat_sales" /> 
         - Item Visibility cannot be zero.(This is error because product may rarly purchased)
+        <img src="images\visibility.png" alt="visibility" />
         - The sales of seafood and starchy food higher and sales can be improved with having stock of this type of products 
+        <img src="images\sea_food.png" alt="sea_food" />
         - Item with MRP 200 -250 dollers having more sale.
-        - stores/malls established 35 years before having good sales margin
-    - Multivarient Analysis observations 
-        - Tier 3 locations has all types of stores/malls and has high sales margin.
+        <img src="images\mrp.png" alt="mrp" />
+        - stores/malls established 28 years before having good sales margin
+        <img src="images\age.png" alt="age" />
+    
 3. Feature Engineering 
     - Data Cleaning 
         - KNN imputer is used to handle missing values 
         - Lable Encoding is used to convert categorical values into numerical values 
-        - Outliers checking done by IQR method
+        - Outliers checking done by BoxPlot Method
     - Feature Scaling 
         - Standard Scaling operations are applied to scale the data 
 4. Feature Selection 
-    - Correlation method is used to remove internal correlated features.
-    - also Varience inflation factor used to check multicollinarity.    
+    - Correlation method is used to check internal correlated features.
+    - Used RandomForest Feature Importance to select important features   
 5. Model Building
     - Trained data by using Linear Regrssion, Random Forest and XGBoost algorithms.
-    - Camparison chart 
+    - Model Accuracy 
+                | Model | R2_Score | RMSE |
+                | ----- |--------- | ---- | 
+                | Random_forest | 0.53 | 1200.80 | 
+                | XG_boost | 0.51 | 1226.63 | 
+                | Linear_regression | 0.50 | 1247.73 | 
     - Random Forest with high accuracy is selcted.
-    - Model Hyperparameter is done by using Grid Search 
+    - Model Hyperparameter is done by using Grid Search Cv 
     - Model Evaluated with R2 Score and RMSE score 
 6. Pipeline 
     Sequence of data preprocessing components is called data pipeline. 
