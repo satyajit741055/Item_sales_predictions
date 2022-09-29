@@ -32,26 +32,26 @@ Every End - End Project has life cycle to get desired output.
     - Analyzed data using visual & Statistical techniques 
     - Univarient Analysis observations 
         - Items with low fat are bought more 
-        <img src="images\FAT_content.png" alt="FAT_CONTENT" />
+            <img src="images\FAT_content.png" alt="FAT_CONTENT" />
         - Fruits and vegetables largely sold and also snacks also have good sales 
-        <img src="images\fruits.png" alt="fruits" />
+            <img src="images\fruits.png" alt="fruits" />
         - Medium size stores/malls have more sales.
-        <img src="images\outlet_sizw.png" alt="outlet_sizw" />
+            <img src="images\outlet_sizw.png" alt="outlet_sizw" />
         - more number of stores/malls located in tier 3 cities 
-        <img src="images\tier3.png" alt="tier3" />
+            <img src="images\tier3.png" alt="tier3" />
         - stores/malls are more of Supermarket type 1
-        <img src="images\supermarket.png" alt="supermarket" />
+            <img src="images\supermarket.png" alt="supermarket" />
     - Bivarient Analysis obseravations 
         - sales are high for both low and regular fat items
-        <img src="images\fat_sales.png" alt="fat_sales" /> 
+            <img src="images\fat_sales.png" alt="fat_sales" /> 
         - Item Visibility cannot be zero.(This is error because product may rarly purchased)
-        <img src="images\visibility.png" alt="visibility" />
+            <img src="images\visibility.png" alt="visibility" />
         - The sales of seafood and starchy food higher and sales can be improved with having stock of this type of products 
-        <img src="images\sea_food.png" alt="sea_food" />
+            <img src="images\sea_food.png" alt="sea_food" />
         - Item with MRP 200 -250 dollers having more sale.
-        <img src="images\mrp.png" alt="mrp" />
+            <img src="images\mrp.png" alt="mrp" />
         - stores/malls established 28 years before having good sales margin
-        <img src="images\age.png" alt="age" />
+            <img src="images\age.png" alt="age" />
     
 3. Feature Engineering 
     - Data Cleaning 
