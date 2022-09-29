@@ -66,11 +66,10 @@ Every End - End Project has life cycle to get desired output.
 5. Model Building
     - Trained data by using Linear Regrssion, Random Forest and XGBoost algorithms.
     - Model Accuracy 
-                | Model | R2_Score | RMSE |
-                | ----- |--------- | ---- | 
-                | Random_forest | 0.53 | 1200.80 | 
-                | XG_boost | 0.51 | 1226.63 | 
-                | Linear_regression | 0.50 | 1247.73 | 
+                | Left-aligned | Center-aligned | Right-aligned |
+                | :---         |     :---:      |          ---: |
+                | git status   | git status     | git status    |
+                | git diff     | git diff       | git diff      |
     - Random Forest with high accuracy is selcted.
     - Model Hyperparameter is done by using Grid Search Cv 
     - Model Evaluated with R2 Score and RMSE score 
