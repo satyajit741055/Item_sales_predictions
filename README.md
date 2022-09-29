@@ -66,10 +66,7 @@ Every End - End Project has life cycle to get desired output.
 5. Model Building
     - Trained data by using Linear Regrssion, Random Forest and XGBoost algorithms.
     - Model Accuracy 
-| Left-aligned | Center-aligned | Right-aligned |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
+        <img src="images\comapre.png" alt="comapre" />
     - Random Forest with high accuracy is selcted.
     - Model Hyperparameter is done by using Grid Search Cv 
     - Model Evaluated with R2 Score and RMSE score 
